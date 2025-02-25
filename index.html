@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <img src="./img/smk-telekomunikasi-darul-ulum.png" alt="">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#profil">Profile</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#organisasi">Organisasi</a></li>
+        </ul>
+    </nav>
+    <main data-aos="fade-down" data-aos-duration="1000">
+        <div class="profil" id="profil">
+            <h1>Muhammad Hafza Aldian</h1>
+            <p>Kepada doaku yang selalu mengiringi</p>
+        </div>
+    </main>
+    <div class="hero">
+        <div class="pendidikan" id="pendidikan" data-aos="fade-right" data-aos-duration="1000">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li>TK Darmawanita</li>
+                <li>SDN 1 Sepulu</li>
+                <li>SMP 1 Klampis</li>
+                <li>SMK Telekomunikasi Darul Ulum</li>
+            </ul>
+        </div>
+        <div class="skill" id="skill" data-aos="fade-left" data-aos-duration="1000">
+            <h2>Skill</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </div>
+    <div class="organisasi" id="organisasi" data-aos="zoom-in-up" data-aos-duration="1000">
+        <h2>Riwayat Organisasi</h2>
+        <ul>
+            <li>OSIS</li>
+            <li>Dewan Penggalang</li>
+        </ul>
+    </div>
+    <div class="waktu" data-aos="zoom-out" data-aos-duration="1000">
+        <h1 class="nanya">Jam Berapa Sekarang?</h1>
+        <p id="time"></p>
+        <button id="halo">Klik saya</button>
+        <button id="tanggal">Tanggal berapa?</button>
+        <p id="teks-tanggal"></p>
+    </div>
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <div class="kontak">
+            <div>
+                <h1>Kontak Saya</h1>
+                <p><b>Alamat:</b> SMK Telekomunikasi Darul ulum</p>
+                <p><b>Nomor:</b> 087750998864</p>
+                <p><b>Email:</b> muhammadhafzaaldian@gmail.com</p>
+            </div>
+        </div>
+        <div class="hubungi">
+            <h1>Hubungi Kami</h1>
+            <form action="../modul_c/index.php" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nama">Nama</label>
+                            <input type="text" name="nama" id="nama" placeholder="Nama">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="no">Nomor</label>
+                            <input type="number" name="no" id="no" placeholder="Nomor HP">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pesan">Pesan</label>
+                            <Textarea name="pesan" id="pesan" placeholder="Pesan"></Textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Send</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <img src="./img/smk-telekomunikasi-darul-ulum.png" alt="">
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
